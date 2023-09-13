@@ -101,8 +101,24 @@
                 <label for="office">Office:</label>
                 <input type="text" id="office" required>
             </div>
-            <button type="submit">Submit</button>
+            <input type="button" value="Submit" onclick="getValues()">
         </form>
     </div>
+    <script>
+        function getValues() {
+            var lname = document.getElementById("last_name").value;
+            var fname = document.getElementById("first_name").value;
+            var mname = document.getElementById("middle_name").value;
+            var bday = document.getElementById("birthdate").value;
+            var dept = document.getElementById("department").value;
+            var off = document.getElementById("office").value;
+            console.log("Last Name: ", lname);
+            console.log("First Name: ", fname);
+            console.log("Middle Name: ", mname);
+            console.log("Birthday: ", bday);
+            console.log("Department: ", dept);
+            console.log("Office: ", off);
+        }
+    </script>
 </body>
 </html>
